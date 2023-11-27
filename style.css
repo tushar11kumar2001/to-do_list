@@ -17,7 +17,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 70%;
+    width: 80%;
     max-width: 500px;
     min-height: 150px;
     border: 4px solid #386641;
@@ -31,7 +31,7 @@ h2{
     margin-bottom: 15px;
 }
 .inputfield{
-    width: 70%;
+    width: 75%;
     height: 40px;
     display: flex;
     padding-left: 20px;
@@ -62,22 +62,23 @@ h2{
 ul{
     list-style:none;
     gap: none;
-    /* margin-left: 20px; */
+  
     font-size: 1.2em;
     letter-spacing: 1px;
 
 }
 ul li{
-    /* margin-bottom: 5px; */
-  
+   
+    width: 95%;
     padding: 12px 8px 12px 40px;
     user-select: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
    position: relative;
-   /* border: 2px solid; */
+ 
  
 }
 
@@ -106,4 +107,15 @@ ul li div{
 
 .checked{
     text-decoration-line: line-through;
+}
+
+
+
+@media( max-width:440px){
+.input{
+    width: 90%;
+}
+ul li{
+    min-height: 30px;
+}
 }
